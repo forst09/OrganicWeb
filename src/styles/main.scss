@@ -12,6 +12,7 @@
 body {
     font-family: 'Jost', sans-serif;
     color: $gray;
+    overflow-x: hidden;
 }
 .title {
     font-family: 'Cormorant', sans-serif;
@@ -37,6 +38,8 @@ body {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .section-main {
     background-image: url(../img/bg-1.png);
@@ -44,25 +47,29 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 208px;
     &__image {
         position: absolute;
     }
     &__tomato {
         right: 121px;
-        bottom: 15px;
+        bottom: 137px;
     }
     &__avocado {
-        right: -10px;
-        top: 49px;
+        right: 8px;
+        top: 47px;
     }
     &__pepper {
-        left: 43px;
-        top: 398px;
+        left: 51px;
+        top: 40%;
     }
     &__beans {
-        left: 7px;
-        bottom: 60px;
+        left: 0px;
+        bottom: 176px;
+    }
+    &__cucumber {
+        top: 0;
+        left: 36%;
     }
 }
 .main {
@@ -145,5 +152,17 @@ body {
                 top: -23px;
             }
         }
+    }
+}
+.section-stock {
+    background-image: url(../img/bg-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__text {
+        font-size: 1.5rem;
+        max-width: 700px;
+        line-height: 1.5;
+        margin-top: 3.75rem;
     }
 }
