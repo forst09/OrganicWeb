@@ -364,3 +364,104 @@ body {
         }
     }
 }
+.section-news {
+    background-image: url(../img/bg-4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__text {
+        font-size: 1.5rem;
+        margin-top: 41px;
+        padding-bottom: 61px;
+    }
+    &-slider {
+        &-child {
+            padding: 5px 10px;
+        }
+        &-item {
+            border: 1px solid rgba($gray, $alpha);
+            border-radius: 20px;
+            min-height: 685px;
+            padding: 29px 40px;
+            box-sizing: border-box;
+            position: relative;
+            &__image {
+                margin: 0 auto;
+            }
+            &__egg {
+                margin-top: 34px;
+                margin-bottom: 61px;
+            }
+            &__chicken {
+                margin-top: 50px;
+                margin-bottom: 73px;
+            }
+            &-text {
+                margin-top: 40px;
+                &__title {
+                    font-family: 'Cormorant', sans-serif;
+                    font-size: 1.875rem;
+                    font-weight: 700;
+                }
+                &__description {
+                    font-size: 1.125rem;
+                    opacity: 0.7;
+                    margin-top: 24px;
+                    margin-bottom: 32px;
+                    line-height: 1.4;
+                }
+                &__egg {
+                    margin-bottom: 58px;
+                }
+                &__cost {
+                    font-size: 1.5rem;
+                    margin-bottom: 27px;
+                }
+            }
+            &-buttons {
+                display: flex;
+                align-items: center;
+                button {
+                    cursor: pointer;
+                }
+                &__quantity {
+                    height: 50px;
+                    width: 50px;
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    border: none;
+                    background-position: center center;
+                    opacity: 0.4;
+                    transition: 0.2s ease;
+                    &:hover {
+                        opacity: 1;
+                    }
+                    &:focus {
+                        opacity: 1;
+                    }
+                }
+                &__minus {
+                    background-image: url(../img/minus.svg);
+                }
+                &__plus {
+                    background-image: url(../img/plus.svg);
+                }
+                &__count {
+                    font-size: 1.5rem;
+                    border: none;
+                    width: 40px;
+                    text-align: center;
+                    cursor: default;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                &__add {
+                    border: none;
+                    margin-left: auto;
+                    padding: 1.3rem 3.1rem;
+                }
+            }
+        }
+    }
+}
