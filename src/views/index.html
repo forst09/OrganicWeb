@@ -465,11 +465,14 @@
                         <p class="box-delivery__text">Мы доставляем ваши заказы курьером в специально оборудованном
                             транспорте.</p>
                         <p class="box-delivery__text">Компания Healthly food предлагает самые удобные и быстрые способы
-                            доставки по всей стране. Посмотреть подробные условия и географию вы можете по этой <a class="box-delivery__link" href="">ссылке</a></p>
+                            доставки по всей стране. Посмотреть подробные условия и географию вы можете по этой <a
+                                class="box-delivery__link" href="">ссылке</a></p>
                     </div>
                 </div>
                 <div class="box-delivery-item">
-                    <p class="box-delivery__text">Вы можете оплатить заказ наличными или картой курьеру, либо воспользоваться функцией онлайн-оплаты и получить <span class="box-delivery__span">скидку&nbsp;5%.</span></p>
+                    <p class="box-delivery__text">Вы можете оплатить заказ наличными или картой курьеру, либо
+                        воспользоваться функцией онлайн-оплаты и получить <span
+                            class="box-delivery__span">скидку&nbsp;5%.</span></p>
                     <ul class="box-delivery-list">
                         <li class="box-delivery-list__item box-delivery-list__mc"></li>
                         <li class="box-delivery-list__item box-delivery-list__visa"></li>
@@ -480,7 +483,37 @@
         </div>
     </section>
 
-    @@include("../blocks/modules/footer/footer.html")
+    <section class="section-form">
+        <div class="wrapper">
+            <div class="box-form">
+                <div class="box-form-item">
+                    <h2 class="title">Не смогли<br><span>определиться?</span></h2>
+                    <div class="ml">
+                        <p class="box-form-text">Если у вас остались вопросы, вы можете задать отправить нам ваши данные. Наши менеджеры
+                            свяжутся с вами в течениe рабочего дня.</p>
+                            <ul class="box-form-list">
+                                <li class="box-form-list__item box-form-list__tel"><a class="box-form-list__link" href="tel:+79453425555">+7 945 342 55 55</a></li>
+                                <li class="box-form-list__item box-form-list__email"><a class="box-form-list__link" href="mailto:healthlyfood@mail.ru">healthlyfood@mail.ru</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="box-form-item">
+                    <form class="form">
+                        <h3 class="form__h3">Свяжитесь с нами</h3>
+                        <label for="" class="form__label">Ваше имя</label>
+                        <input type="text" class="form__input" placeholder="Ваше имя">
+                        <label for="" class="form__label">Ваш телефон</label>
+                        <input type="text" class="form__input" placeholder="Ваш телефон">
+                        <button class="btn">заказать звонок</button>
+                        <p class="form__text">Нажимая на кнопку вы подтверждаете свое согласие на обработку <a class="form__link" href="">персональных данных</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        @@include("../blocks/modules/footer/footer.html")
+    </section>
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
