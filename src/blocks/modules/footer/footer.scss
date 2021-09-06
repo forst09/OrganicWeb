@@ -5,17 +5,18 @@
     @media (max-width:990px) {
         padding-top: 41px;
         padding-bottom: 35px;
+        text-align: center;
     }
     .logo {
         width: 179px;
         height: 48px;
         @media (max-width:990px) {
-            margin: 0 auto;
-            margin-bottom: 30px;
+            margin: 0 auto 26px;
         }
-    }
-    @media (max-width:990px) {
-        text-align: center;
+        @media (max-width:790px) {
+            width: 120px;
+            height: 32px;
+        }
     }
 }
 .box-footer {
@@ -62,6 +63,9 @@
                 }
             }
         }
+        @media (max-width:790px) {
+            margin-top: 38px;
+        }
         &__item {
             span {
                 display: block;
@@ -75,6 +79,10 @@
                 transition: 0.2s ease;
                 &:hover {
                     opacity: 1;
+                }
+                @media (max-width:790px) {
+                    width: 50px;
+                    height: 50px;
                 }
             }
         }
@@ -102,6 +110,18 @@
         &__item {
             font-size: 1.12rem;
             margin-bottom: 25px;
+            @media (max-width:990px) {
+                font-size: 1.5rem;
+            }
+            @media (max-width:790px) {
+                font-size: 0.75rem;
+                margin-bottom: 22px;
+            }
+        }
+        &__worktime {
+            @media (max-width:790px) {
+                margin-bottom: 8px;
+            }
         }
         &__link {
             color: $gray;
@@ -113,9 +133,16 @@
         }
         &__tel {
             margin-bottom: 31px;
+            @media (max-width:790px) {
+                margin-top: 17px;
+                margin-bottom: 0;
+            }
         }
         &__phone {
             font-size: 1.68rem;
+            @media (max-width:790px) {
+                font-size: 1.87rem;
+            }
         }
         &__phone, &__email {
             transition: 0.2s ease;
@@ -132,8 +159,20 @@
     @media (max-width:990px) {
        flex-direction: column;
     }
+    @media (max-width:790px) {
+        margin-top: 27px;
+    }
+    &__copy {
+        margin-bottom: 0;
+    }
     p, span, &__link {
         opacity: 0.6;
+        @media (max-width:990px) {
+            font-size: 1.3rem;
+        }
+        @media (max-width:790px) {
+            font-size: 0.62rem;
+        }
     }
     &__link {
         color: $gray;
